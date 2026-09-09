@@ -1,2 +1,3 @@
 theme: minima
 permalink: /:year/:month/:day/:title.html
+show_excerpts: false

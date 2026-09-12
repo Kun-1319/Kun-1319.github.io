@@ -4,7 +4,7 @@ description: 北京联合大学信息安全专业 | CTF 爱好者 | Bugku 刷题
 author: Kun-1319
 
 # 主题
-theme: jekyll-theme-minima
+theme: minima
 
 # 社交链接（Minima 会自动抓取这些信息并生成图标链接）
 github_username: Kun-1319

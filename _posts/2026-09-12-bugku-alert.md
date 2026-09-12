@@ -17,6 +17,7 @@ categories: [CTF,Bugku,Web]
  在页面中利用Ctrl+U查找到源代码，原本想用Ctrl+F搜索flag相关内容，但搜索后一无所获，于是转变思路想到flag可能被编码加密，于是逐行搜索与flag格式相似的内容，找到后复制并利用HTML解码工具对内容进行解码得到了flag
 
 图片如下
+
 <img width="1280" height="800" alt="1" src="https://github.com/user-attachments/assets/a49e1fb3-978f-4398-9555-78b3b991998e" />
 
 

@@ -1,1 +1,14 @@
-remote_theme: cotes2020/jekyll-theme-chirpy
+# 基础配置
+title: Kun-1319 的安全笔记
+description: 北京联合大学信息安全专业 | CTF 爱好者 | Bugku 刷题记录
+author: Kun-1319
+
+# 主题
+theme: jekyll-theme-minima
+
+# 社交链接（Minima 会自动抓取这些信息并生成图标链接）
+github_username: Kun-1319
+email: 你的邮箱lihaokun8122@163.com
+
+# 隐藏 Minima 默认的页脚描述，让页面更干净
+show_excerpts: true

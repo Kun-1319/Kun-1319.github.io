@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2026-9-11 10: 00:00 +0800
+date: 2026-09-11 10: 00:00 +0800
 categories: [CTF,Bugku,Web]
 ---
 

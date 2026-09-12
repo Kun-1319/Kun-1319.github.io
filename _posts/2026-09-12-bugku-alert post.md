@@ -1,5 +1,5 @@
 ---
-layout: post
+layout:post
 title:"Bugku Web alert题 Writeup"
 date:"2026-09-12 19:42:00 +0800"
 categories:[CTF,Bugku,Web]

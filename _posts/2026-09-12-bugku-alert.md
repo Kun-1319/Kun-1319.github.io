@@ -1,4 +1,3 @@
-<img width="1280" height="800" alt="屏幕截图 2026-09-12 193714" src="https://github.com/user-attachments/assets/f01682e0-83e2-4d43-a94a-839f948420b5" /><img width="1280" height="800" alt="屏幕截图 2026-09-12 193714" src="https://github.com/user-attachments/assets/f4e7fc37-2444-48b5-adad-f4b4d62bf276" /><img width="1280" height="800" alt="屏幕截图 2026-09-12 193714" src="https://github.com/user-attachments/assets/9119f5c3-6dc7-4c99-b836-bd60fa4908e2" />
 ---
 layout: post
 title: "Bugku Web alert题 Writeup"

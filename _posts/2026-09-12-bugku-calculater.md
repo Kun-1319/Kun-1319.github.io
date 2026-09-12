@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bugku Web 计算器题 Writeup"
-date： ”2026-09-12 10：00：00 +0800”
+date： "2026-09-12 10：00：00 +0800"
 categories: [CTF,Bugku,Web]
 ---
 

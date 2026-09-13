@@ -3,6 +3,7 @@ layout: post
 title: "Bugku Web 头等舱 Writeup"
 date: "2026-09-13 19:39:00 +0800"
 categories: [CTF,Bugku,Web]
+---
 
 ## 一、题目信息
 - **平台**:Bugku

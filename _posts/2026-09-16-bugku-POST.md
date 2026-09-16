@@ -1,6 +1,6 @@
 ---
 layout: post
-litle: "Bugku Web POST Writeup"
+title: "Bugku Web POST Writeup"
 date: “2026-09-16 08:38:00 +0800"
 gategories: [CTf,Bugku,Web]
 ---

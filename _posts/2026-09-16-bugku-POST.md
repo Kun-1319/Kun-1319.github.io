@@ -1,7 +1,7 @@
 ---
 layout: post
 litle: "Bugku Web POST Writeup"
-date： “2026-09-16 08:38:00 +0800"
+date: “2026-09-16 08:38:00 +0800"
 gategories: [CTf,Bugku,Web]
 ---
 
@@ -18,3 +18,7 @@ POST请求参数无法通过修改网址得到flag，需要利用应用Burp Suit
 
 ## 四、遇到的困难
 在解题中我多次用了同一个方法和步骤但只解出了两次答案，目前没有发现原因，需要后期和老师或者学长沟通解决。
+
+解题过程图片如下
+
+<img width="1280" height="800" alt="pic2026-09-16 083355" src="https://github.com/user-attachments/assets/621594e5-c734-4e91-a50d-91038cff86c4" />

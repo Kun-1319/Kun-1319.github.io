@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bugku Crypto 聪明的小羊 Writeup'
-date: '2026-09-17 23:00:00 +0800'
+date: '2026-09-17 19:00:00 +0800'
 categories: [CTF, Bugku, Crypto]
 ---
 

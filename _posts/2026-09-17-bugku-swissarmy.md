@@ -7,7 +7,7 @@ categories: [CTF, Bugku, Pwn]
 
 ## 一、 题目信息
 - **平台**：Bugku
-- **题型**：Web
+- **题型**：Pwn
 - **考点**：Linux 基础命令(nc)(cat)(ls)
 
 ## 二、 解题思路

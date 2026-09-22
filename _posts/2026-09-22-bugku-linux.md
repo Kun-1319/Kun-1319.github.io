@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bugku Misc linux Writeup'
-date: '2026-09-22 10<img width="1280" height="800" alt="1 2026-09-22 103908" src="https://github.com/user-attachments/assets/c4e36f0b-9d28-4d28-bbbd-e2446069d77a" />
+date: 2026-09-22 10：00：00 +0800
 :00:00 +0800'
 categories: [CTF, Bugku, Misc]
 ---

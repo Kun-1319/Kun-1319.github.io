@@ -2,7 +2,6 @@
 layout: post
 title: 'Bugku Misc linux Writeup'
 date: 2026-09-22 10：00：00 +0800
-:00:00 +0800'
 categories: [CTF, Bugku, Misc]
 ---
 

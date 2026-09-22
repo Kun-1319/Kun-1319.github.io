@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bugku Crypto 散乱的密文 Writeup'
-date: "2026-09-22 14:30:00 +0800"  # ← 请把这个时间改成你电脑现在的时间！
+date: "2026-09-22 11:20:00 +0800"  # ← 请把这个时间改成你电脑现在的时间！
 categories: [CTF, Bugku, Crypto]
 ---
 

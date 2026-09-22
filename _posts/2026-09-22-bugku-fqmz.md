@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bugku Misc 富强民主 Writeup'
-date: '2026-09-22 15:00:00 +0800'
+date: '2026-09-22 11:00:00 +0800'
 categories: [CTF, Bugku, Misc]
 ---
 

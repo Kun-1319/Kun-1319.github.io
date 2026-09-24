@@ -1,5 +1,5 @@
 ---
-layo:post
+layout:post
 title:知识点笔记
 ---
 

@@ -1,4 +1,5 @@
 ---
+layo:post
 title:知识点笔记
 ---
 

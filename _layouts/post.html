@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%Y-%m-%d" }}
+      </time>
+    </p >
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div style="text-align: center; margin-top: 50px; margin-bottom: 30px;">
+    <a href=" '/' | relative_url }}" style="display: inline-block; padding: 10px 24px; background-color: #58a6ff; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold; font-family: sans-serif;">
+      ← 返回首页目录
+    </a >
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a >
+</article>

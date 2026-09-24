@@ -17,11 +17,10 @@ layout: default
     {{ content }}
   </div>
 
-  <div style="text-align: center; margin-top: 50px; margin-bottom: 30px;">
-    <a href=" '/' | relative_url }}" style="display: inline-block; padding: 10px 24px; background-color: #58a6ff; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold; font-family: sans-serif;">
-      ← 返回首页目录
-    </a >
-  </div>
+  <!-- 返回按钮：文字和标签写在同一行，链接直接写 "/" -->
+<div style="text-align: center; margin-top: 50px; margin-bottom: 30px;">
+<a href="/" style="display: inline-block; padding: 10px 24px; background-color:#58a6ff; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold; font-family: sans-serif;">返回目录页</a>
+</div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a >
 </article>

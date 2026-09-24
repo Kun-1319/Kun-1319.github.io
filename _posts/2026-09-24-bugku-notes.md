@@ -1,6 +1,6 @@
 ---
-layout:post
-title:知识点笔记
+layout: post
+title: "知识点笔记"
 ---
 
 ## 26.09.24

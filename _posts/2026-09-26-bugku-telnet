@@ -26,6 +26,3 @@ categories: [CTF, Bugku, Misc]
    - 在弹出的菜单中选择 **`追踪流 (Follow)`** 的 **`TCP 流 (TCP Stream)`**。
 5. **获取 Flag**：在password下面发现flag 。
 6. **提交答案**：将 flag 复制并提交至 Bugku 平台
-
-图片如下
-

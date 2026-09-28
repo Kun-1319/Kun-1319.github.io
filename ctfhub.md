@@ -41,9 +41,9 @@ permalink: /ctfhub/
 .post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
 .post-card { background: #161b22; padding: 20px; border-radius: 8px; border: 1px solid #30363d; }
 .post-date { color: #8b949e; font-size: 14px; margin-bottom: 8px; }
-.post-title a { text-decoration: none; color: #58a6ff; font-size: 18px; }
-.post-title a:hover { text-decoration: underline; }
+.post-card a { color: #58a6ff !important; text-decoration: none; font-size: 18px; }
+.post-card a:hover { text-decoration: underline; }
 .widget h3 { font-size: 18px; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px; color: #ffffff; }
-.tag { display: inline-block; background: #21262d; color: #c9d1d9; padding: 4px 10px; border-radius: 12px; font-size: 13px; margin: 0 5px 5px 0; text-decoration: none; }
-.tag:hover { background: #30363d; color: #58a6ff; }
+.tag { display: inline-block; background: #21262d; color: #c9d1d9 !important; padding: 4px 10px; border-radius: 12px; font-size: 13px; margin: 0 5px 5px 0; text-decoration: none; pointer-events: auto; }
+.tag:hover { background: #30363d; color: #58a6ff !important; }
 </style>

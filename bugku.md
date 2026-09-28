@@ -1,13 +1,11 @@
 ---
 layout: page
-title: CTFHub
-permalink: /ctfhub/
+title: Bugku
+permalink: /bugku/
 ---
 
-<ul>
-  {% for post in site.posts %}
-    {% if post.categories contains 'CTFHub' %}
-      <li>{{ post.title }}</li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+  {% if post.categories contains 'Bugku' %}
+- [{{ post.title }}]({{ post.url }})
+  {% endif %}
+{% endfor %}

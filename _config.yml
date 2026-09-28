@@ -12,7 +12,8 @@ email: lihaokun8122@163.com
 
 # 导航栏配置
 header_pages:
-  - tags.md
+  - bugku.md
+  - ctfhub.md
 
 # 隐藏 Minima 默认的页脚描述
 show_excerpts: false

@@ -6,9 +6,13 @@ author: 李昊锟
 # 主题
 theme: minima
 
-# 社交链接（Minima 会自动抓取这些信息并生成图标链接）
+# 社交链接
 github_username: Kun-1319
-email: email:lihaokun8122@163.com
+email: lihaokun8122@163.com
 
-# 隐藏 Minima 默认的页脚描述，让页面更干净
+# 导航栏配置
+header_pages:
+  - tags.md
+
+# 隐藏 Minima 默认的页脚描述
 show_excerpts: false

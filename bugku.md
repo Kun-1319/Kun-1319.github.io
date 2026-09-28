@@ -9,10 +9,10 @@ permalink: /bugku/
     <div class="post-grid">
       {% for post in site.posts %}
         {% if post.categories contains 'Bugku' %}
-        <div class="post-card">
+        <a href=" " class="post-card">
           <div class="post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
-          <h3 class="post-title">{{ post.title }}</h3>
-        </div>
+          <div class="post-title">{{ post.title }}</div>
+        </a >
         {% endif %}
       {% endfor %}
     </div>
@@ -33,17 +33,17 @@ permalink: /bugku/
 <style>
 .page-wrapper { display: flex; gap: 30px; margin-top: 20px; }
 .main-content { flex: 1; min-width: 0; }
-.sidebar { width: 260px; flex-shrink: 0; }
+.sidebar { width: 300px; flex-shrink: 0; }
 @media (max-width: 768px) {
   .page-wrapper { flex-direction: column; }
   .sidebar { width: 100%; }
 }
-.post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-.post-card { background: #161b22; padding: 20px; border-radius: 8px; border: 1px solid #30363d; }
-.post-date { color: #8b949e; font-size: 14px; margin-bottom: 8px; }
-.post-card a { color: #58a6ff !important; text-decoration: none; font-size: 18px; }
-.post-card a:hover { text-decoration: underline; }
-.widget h3 { font-size: 18px; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px; color: #ffffff; }
-.tag { display: inline-block; background: #21262d; color: #c9d1d9 !important; padding: 4px 10px; border-radius: 12px; font-size: 13px; margin: 0 5px 5px 0; text-decoration: none; pointer-events: auto; }
-.tag:hover { background: #30363d; color: #58a6ff !important; }
+.post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.post-card { background: #161b22; padding: 20px; border-radius: 8px; border: 1px solid #30363d; display: block; text-decoration: none; transition: border-color 0.2s; }
+.post-card:hover { border-color: #58a6ff; text-decoration: none; }
+.post-date { color: #8b949e; font-size: 15px; margin-bottom: 10px; }
+.post-title { color: #58a6ff; font-size: 19px; font-weight: 600; line-height: 1.4; }
+.widget h3 { font-size: 20px; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px; color: #ffffff; }
+.tag { display: inline-block; background: #21262d; color: #c9d1d9; padding: 5px 12px; border-radius: 15px; font-size: 15px; margin: 0 6px 8px 0; text-decoration: none; transition: background 0.2s; }
+.tag:hover { background: #30363d; color: #58a6ff; }
 </style>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CTFHub Web Cookie Writeup
-date: "2026-09-29 21:00:00 +0800"
+date: "2026-09-29 16:00:00 +0800"
 categories: [CTF, CTFHub, Web]
 tags: [ctfhub, web, cookie]
 ---

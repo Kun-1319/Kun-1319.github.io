@@ -2,25 +2,22 @@
 layout: default
 ---
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%Y-%m-%d" }}
-      </time>
-    </p >
+<div class="reading-progress" aria-hidden="true"></div>
+<article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="post-header container">
+    <a class="back-link" href="{{ '/archive/' | relative_url }}">← 全部文章</a>
+    <p class="eyebrow">{% for category in page.categories %}{{ category | escape }}{% unless forloop.last %} / {% endunless %}{% endfor %}</p>
+    <h1 class="post-title p-name" itemprop="headline">{{ page.title | escape }}</h1>
+    <p class="post-meta"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%Y.%m.%d' }}</time><span>·</span><span>{{ site.author | escape }}</span></p>
+    {% if page.tags.size > 0 %}<div class="post-tags">{% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify: 'raw' | uri_escape }}">{{ tag | escape }}</a>{% endfor %}</div>{% endif %}
   </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+  <div class="reading-layout container">
+    <div class="post-content e-content" itemprop="articleBody">{{ content }}</div>
+    <aside class="toc" aria-label="文章目录" hidden><div class="toc-inner"><p class="eyebrow">本文目录</p><nav id="toc-links" aria-label="章节导航"></nav></div></aside>
   </div>
-
-  <!-- 返回按钮：文字和标签写在同一行，链接直接写 "/" -->
-<div style="text-align: center; margin-top: 20px;">
-<a href="/" style="color: #0366d6; padding: 10px 20px; text-decoration: none; border-radius: 5px;">返回目录页</a>
-</div>
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a >
+  <nav class="post-pagination container" aria-label="相邻文章">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>← 上一篇</span><strong>{{ page.previous.title | escape }}</strong></a>{% endif %}
+    {% if page.next %}<a href="{{ page.next.url | relative_url }}"><span>下一篇 →</span><strong>{{ page.next.title | escape }}</strong></a>{% endif %}
+  </nav>
 </article>
+

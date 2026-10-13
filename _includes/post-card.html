@@ -1,0 +1,8 @@
+<article class="post-card" data-reveal>
+  <a class="post-card-link" href="{{ include.post.url | relative_url }}">
+    <div class="card-top"><span class="eyebrow">{% if include.post.categories contains 'CTFHub' %}CTFHUB{% elsif include.post.categories contains 'Bugku' %}BUGKU{% else %}JOURNAL{% endif %}</span><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%Y.%m.%d' }}</time></div>
+    <h3>{{ include.post.title | remove: ' Writeup' | escape }}</h3>
+    <p>{{ include.post.excerpt | strip_html | truncate: 88 | escape }}</p>
+    <div class="card-bottom"><span>{% for category in include.post.categories %}{% unless category == 'CTF' or category == 'Bugku' or category == 'CTFHub' %}{{ category | escape }} {% endunless %}{% endfor %}</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+  </a>
+</article>

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="hero container">
+  <p class="eyebrow hero-eyebrow">KUN'S JOURNAL · 信息安全 / CTF / 学习记录</p>
+  <h1 class="sr-only">{{ site.title | escape }}</h1>
+  <div class="hero-actions"><a class="button button-primary" href="#latest">开始阅读 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/{{ site.github_username | escape }}">我的 GitHub <span aria-hidden="true">↗</span></a></div>
+  <div class="hero-art" aria-hidden="true"><img src="{{ '/assets/orbit.svg' | relative_url }}" width="1200" height="510" alt=""><span class="art-caption">CURIOSITY IS THE BEGINNING.</span></div>
+</section>
+<section class="feature-section">
+  <div class="container feature-inner" data-reveal><p class="eyebrow">LEARN. THINK. REPEAT.</p><p>Web、Crypto、Misc、Pwn。<br>把碎片知识连成线，把解题思路写下来。</p><div class="feature-bottom"><a class="text-link" href="{{ '/archive/' | relative_url }}">探索全部文章 <span aria-hidden="true">↗</span></a><span class="feature-count"><strong>{{ site.posts.size }}</strong> 篇探索记录</span></div></div>
+</section>
+<section class="container latest-section" id="latest">
+  <div class="section-heading" data-reveal><div><p class="eyebrow">THE LATEST</p><h2 class="sr-only">最新文章</h2></div><a class="text-link" href="{{ '/archive/' | relative_url }}">查看全部 <span aria-hidden="true">↗</span></a></div>
+  <div class="post-grid">{% for post in site.posts limit:6 %}{% include post-card.html post=post %}{% endfor %}</div>
+</section>
+<section class="container collections-section">
+  <div class="section-heading" data-reveal><div><p class="eyebrow">COLLECTIONS</p><h2 class="sr-only">文章分类</h2></div></div>
+  <div class="collection-grid"><a class="collection-card bugku-collection" href="{{ '/bugku/' | relative_url }}" data-reveal><span class="eyebrow">01 / BUGKU</span><h3>从基础出发。<br>在实践中进阶。</h3><p>Web · Crypto · Misc · Pwn</p><div class="collection-graphic" aria-hidden="true"><span>&lt;</span><span>/</span><span>&gt;</span></div><span class="collection-link">阅读 Bugku 笔记 ↗</span></a><a class="collection-card ctfhub-collection" href="{{ '/ctfhub/' | relative_url }}" data-reveal><span class="eyebrow">02 / CTFHUB</span><h3>拆解一个问题。<br>发现更多可能。</h3><p>HTTP · 信息收集 · Web 安全</p><div class="collection-graphic hub-graphic" aria-hidden="true"><span>{</span><span>∴</span><span>}</span></div><span class="collection-link">阅读 CTFHub 笔记 ↗</span></a></div>
+</section>
+<section class="container about-section" data-reveal><p class="eyebrow">BEHIND THE JOURNAL</p><h2 class="sr-only">关于我</h2><p>我是{{ site.author | escape }}，北京联合大学信息安全专业学生，CTF 爱好者。</p><a class="text-link" href="mailto:{{ site.email | escape }}">交流想法 <span aria-hidden="true">↗</span></a></section>

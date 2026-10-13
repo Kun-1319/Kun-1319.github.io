@@ -1,25 +1,12 @@
 ---
 layout: page
 title: 标签
+description: 跟随一个关键词，找到下一次探索的方向。
 permalink: /tags/
 ---
 
-<style>
-.tag-section { margin-bottom: 40px; }
-.tag-title { font-size: 22px; color: #ffffff; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px; }
-.tag-list { padding-left: 20px; }
-.tag-list li { margin-bottom: 10px; }
-.tag-list li a { color: #58a6ff; font-size: 17px; text-decoration: none; }
-.tag-list li a:hover { text-decoration: underline; }
-</style>
-
+<div class="tag-cloud">{% for tag in site.tags %}<a href="#{{ tag[0] | slugify: 'raw' | uri_escape }}">{{ tag[0] | escape }} <span>{{ tag[1].size }}</span></a>{% endfor %}</div>
 {% for tag in site.tags %}
-  <div class="tag-section">
-    <h2 id="{{ tag[0] }}" class="tag-title">{{ tag[0] }}</h2>
-    <ul class="tag-list">
-      {% for post in tag[1] %}
-        <li>{{ post.title }}</li>
-      {% endfor %}
-    </ul>
-  </div>
+<section class="tag-section"><h2 id="{{ tag[0] | slugify: 'raw' | escape }}">{{ tag[0] | escape }}<span>{{ tag[1].size }}</span></h2><ul class="tag-list">{% for post in tag[1] %}<li><a href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></section>
 {% endfor %}
+

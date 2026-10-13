@@ -9,7 +9,7 @@ layout: default
     <p class="eyebrow">{% for category in page.categories %}{{ category | escape }}{% unless forloop.last %} / {% endunless %}{% endfor %}</p>
     <h1 class="post-title p-name" itemprop="headline">{{ page.title | escape }}</h1>
     <p class="post-meta"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%Y.%m.%d' }}</time><span>·</span><span>{{ site.author | escape }}</span></p>
-    {% if page.tags.size > 0 %}<div class="post-tags">{% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify: 'raw' | uri_escape }}">{{ tag | escape }}</a>{% endfor %}</div>{% endif %}
+    {% if page.tags.size > 0 %}<div class="post-tags">{% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | append: '' | slugify: 'raw' | uri_escape }}">{{ tag | escape }}</a>{% endfor %}</div>{% endif %}
   </header>
   <div class="reading-layout container">
     <div class="post-content e-content" itemprop="articleBody">{{ content }}</div>

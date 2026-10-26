@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "课外任务：VMware、Kali 与 OWASP BWA 环境搭建 Writeup"
+title: "课外拓展：VMware、Kali 与 OWASP BWA 环境搭建 Writeup"
 date: "2026-10-26 00:00:00 +0800"
-categories: [课外任务]
-tags: [课外任务, VMware, Kali, SQL基础, 环境搭建]
+permalink: /课外任务/2026/10/25/vmware-kali-owaspbwa-writeup.html
+categories: [课外拓展]
+tags: [课外拓展, VMware, Kali, SQL基础, 环境搭建]
 ---
 
 ## 一、实验目标

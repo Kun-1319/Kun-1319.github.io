@@ -1,10 +1,16 @@
 ---
 layout: default
 ---
-<section class="container collection-header" data-reveal><a class="back-link" href="{{ '/' | relative_url }}">← 返回首页</a><p class="eyebrow">{{ page.eyebrow | default: 'THE JOURNAL' | escape }}</p><h1>{{ page.title | escape }}<span class="heading-dot">.</span></h1><p class="page-description">{{ page.description | escape }}</p></section>
-<section class="container archive-section">
+<section class="container collection-header"><a class="back-link" href="{{ '/blog/' | relative_url }}">← 首页</a><p class="eyebrow">{{ page.eyebrow | default: 'ARTICLES' | escape }}</p><h1>{{ page.title | escape }}<span class="heading-dot">.</span></h1>{% if page.description %}<p class="page-description">{{ page.description | escape }}</p>{% endif %}</section>
+<section class="container archive-section" data-archive>
   {% if page.category %}{% assign collection_posts = site.posts | where_exp: 'post', 'post.categories contains page.category' %}{% else %}{% assign collection_posts = site.posts %}{% endif %}
-  <div class="archive-toolbar"><p>{{ collection_posts.size }} 篇文章</p><a class="text-link" href="{{ '/tags/' | relative_url }}">按标签探索 ↗</a></div>
-  <div class="post-grid">{% for post in collection_posts %}{% include post-card.html post=post %}{% endfor %}</div>
-  {% if collection_posts.size == 0 %}<p class="empty-state">新的探索即将开始。</p>{% endif %}
+  <div class="archive-controls" hidden>
+    <label class="archive-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">筛选文章标题</span><input type="search" data-archive-query placeholder="筛选标题…" autocomplete="off"></label>
+    <label class="tag-select"><span>标签</span><select data-archive-tag aria-label="按标签筛选"><option value="">全部标签</option></select></label>
+    <label class="tag-select"><span>排序</span><select data-archive-sort aria-label="文章排序"><option value="new">最新优先</option><option value="old">最早优先</option></select></label>
+  </div>
+  <div class="archive-toolbar"><p data-archive-count role="status">{{ collection_posts.size }} 篇文章</p><a class="text-link" href="{{ '/tags/' | relative_url }}">全部标签 ↗</a></div>
+  <div class="post-grid">{% for post in collection_posts %}<div class="archive-item" data-title="{{ post.title | downcase | escape }}" data-tags="{{ post.tags | jsonify | escape }}" data-date="{{ post.date | date_to_xmlschema }}">{% include post-card.html post=post %}</div>{% endfor %}</div>
+  <p class="empty-state" data-archive-empty hidden>没有匹配的文章。<button type="button" class="text-link" data-filter-reset>清除筛选</button></p>
+  {% if collection_posts.size == 0 %}<p class="empty-state">暂无文章。</p>{% endif %}
 </section>

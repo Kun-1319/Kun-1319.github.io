@@ -13,7 +13,7 @@ layout: default
   </header>
   <div class="reading-layout container">
     <div class="post-content e-content" itemprop="articleBody">{{ content }}</div>
-    <aside class="toc" aria-label="文章目录" hidden><div class="toc-inner"><p class="eyebrow">本文目录</p><nav id="toc-links" aria-label="章节导航"></nav></div></aside>
+    <aside class="toc" aria-label="文章目录" hidden><div class="toc-inner"><button class="toc-toggle" aria-expanded="true" aria-controls="toc-links">本文目录 <span aria-hidden="true">−</span></button><nav id="toc-links" aria-label="章节导航"></nav></div></aside>
   </div>
   <nav class="post-pagination container" aria-label="相邻文章">
     {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>← 上一篇</span><strong>{{ page.previous.title | escape }}</strong></a>{% endif %}

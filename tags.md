@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 标签
-description: 跟随一个关键词，找到下一次探索的方向。
+description: 按标签浏览文章。
 permalink: /tags/
 ---
 

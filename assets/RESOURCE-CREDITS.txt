@@ -1,0 +1,8 @@
+React Bits Particle Text and Swarm Cursor by David Haz. Adapted for this Jekyll blog.
+https://www.reactbits.dev/text-animations/particle-text
+https://www.reactbits.dev/animations/swarm-cursor
+Source: https://github.com/DavidHDev/react-bits
+Particle Text SHA: 60bb79edb461fa35c90f52373151d51059d62930
+Swarm Cursor SHA: 18da4d167bfe292997448340144e1f78e30abe7a
+License: REACT-BITS-LICENSE.txt (MIT + Commons Clause).
+Card pointer lighting and tilt: interaction references from reactbits.dev, implemented for the existing site.

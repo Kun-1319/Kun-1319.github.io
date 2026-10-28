@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0d12">
+  <meta name="description" content="{{ site.description | escape }}">
+  <title>{{ site.title | escape }}</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('kun-theme')==='light'?'light':'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"><link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <script src="{{ '/assets/site.js' | relative_url }}" defer></script><script src="{{ '/assets/swarm-cursor.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <main class="landing" id="main">
+    <canvas id="swarm-canvas" aria-hidden="true"></canvas>
+    <header class="landing-header"><span class="brand"><span class="brand-mark" aria-hidden="true">k.</span><span>Kun / Journal</span></span><div class="landing-settings"><button class="swarm-pause" type="button" aria-pressed="false" hidden>暂停动效</button><button class="icon-button theme-toggle" aria-label="切换到浅色模式" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button></div></header>
+    <div class="landing-content"><h1>CTF</h1><div class="landing-actions"><a class="button button-primary" href="{{ '/blog/' | relative_url }}">前往 Blog 主页 <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/{{ site.github_username | escape }}">前往 GitHub <span aria-hidden="true">↗</span></a></div></div>
+    <div class="landing-footer"><span>© {{ site.time | date: '%Y' }} {{ site.author | escape }}</span><span>信息安全 / CTF</span></div>
+  </main>
+</body>
+</html>

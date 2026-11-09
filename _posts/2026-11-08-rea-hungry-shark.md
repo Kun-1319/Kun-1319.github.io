@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "利用Codex与dsh（dsh-purge）协作 逆向《饥饿鲨：进化》并修改游戏参数"
+title: "利用Codex与dsh（dsh-purge）协作 进行逆向工程并修改参数"
 date: "2026-11-08 00:00:00 +0800"
 permalink: /课外任务/2026/11/08/codex-dsh-hungry-shark-writeup.html
 categories: [课外拓展]

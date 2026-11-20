@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL 元数据侦察实战：无需切换库的跨库查询与内置探测函数
-date: 2026-11-20
+date: 2026-11-20 1:10:00 +0800
 categories: [课外拓展, MySQL, Web安全]
 ---
 

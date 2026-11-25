@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 第三次课 Writeup：UNION 拼接入门
+title: Writeup：UNION 拼接入门
 date: "2026-11-21 01:10:00 +0800"
 categories: [课外拓展, MySQL, Web安全]
 tags: [mysql, sql-injection, union, information-schema]

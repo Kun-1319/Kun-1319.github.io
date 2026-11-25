@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UNION 拼接入门
+title: UNION 拼接入门2
 date: "2026-11-25 15:20:00 +0800"
 categories: [课外拓展, MySQL, Web安全]
 tags: [mysql, sql-injection, union, information-schema]

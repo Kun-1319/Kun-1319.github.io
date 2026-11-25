@@ -2,7 +2,7 @@
 layout: post
 title: CTFHub Cookie注入Writeup
 date: "2026-11-23 17:58:00 +0800"
-categories: [课外拓展, MySQL, Web安全]
+categories: [CTF, CTFHub, Web]
 tags: [ctfhub, mysql, sql-injection]
 ---
 
